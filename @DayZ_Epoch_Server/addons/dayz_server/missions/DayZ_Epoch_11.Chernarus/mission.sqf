@@ -939,36 +939,6 @@ if (true) then
   _this setPos [6317.2295, 7803.6357, 3.0517578e-005];
 };
 
-_vehicle_538 = objNull;
-if (true) then
-{
-  _this = createVehicle ["Info_Board_EP1", [11457.569, 11360.669, -3.0517578e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_538 = _this;
-  _this setDir -55.524353;
-  _this setVehicleInit "this allowDammage false;";
-  _this setPos [11457.569, 11360.669, -3.0517578e-005];
-};
-
-_vehicle_541 = objNull;
-if (true) then
-{
-  _this = createVehicle ["Info_Board_EP1", [4086.2542, 11662.404, -6.1035156e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_541 = _this;
-  _this setDir 469.56882;
-  _this setVehicleInit "this allowDammage false;";
-  _this setPos [4086.2542, 11662.404, -6.1035156e-005];
-};
-
-_vehicle_544 = objNull;
-if (true) then
-{
-  _this = createVehicle ["Info_Board_EP1", [6310.2837, 7797.7686, 3.0517578e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_544 = _this;
-  _this setDir 486.70212;
-  _this setVehicleInit "this allowDammage false;";
-  _this setPos [6310.2837, 7797.7686, 3.0517578e-005];
-};
-
 _vehicle_548 = objNull;
 if (true) then
 {

@@ -58,4 +58,3 @@
 5 "_mapBB"
 5 "ckpackCargoGlobal [_x, 2];} forEach _backpacks;"
 5 "{_tentbox addMagazineCargoGlobal [_x, 2];} forEach _items;"
-5 "setDammage"

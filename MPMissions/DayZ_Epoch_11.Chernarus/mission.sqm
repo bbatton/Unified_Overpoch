@@ -1,4 +1,5 @@
 version=11;
+
 class Mission
 {
 	addOns[]=
@@ -18,7 +19,35 @@ class Mission
 		"pook_h13",
 		"csj_gyroac",
 		"map_eu",
-		"jetskiyanahuiaddon"
+		"jetskiyanahuiaddon",
+		"warehouse",
+		"mbg_buildings_3",
+		"mbg_killhouses",
+		"aif_arma1buildings",
+		"mbg_african_buildings",
+		"gms_k98",
+		"RH_m14",
+		"FHQ_Remington",
+		"FHQ_Remington_ammo",
+		"FHQ_Remington_msr",
+		"FHQ_Remington_xm2010",
+		"FHQ_Remington_acr",
+		"FHQ_Remington_rsass",
+		"VILAS_WWP",
+		"VILAS_RW_Forces",
+		"VILAS_WWP_CO",
+		"VILAS_RW_Forces_CO",
+		"ddopp_taserpack",
+		"smk_anims_lite",
+		"MicroAirVehicles",
+		"oz_is_objects",
+		"monaro",
+		"gsc_units_stalker_patch",
+		"american_law_enforcement",
+		"CYBP_Camels_Config",
+		"nissan_350z",
+		"ussr_cheytac",
+		"bb_mercenary"
 	};
 	addOnsAuto[]=
 	{
@@ -1151,21 +1180,21 @@ class Mission
 				};
 			};
 		};
-		class Item1
+	class Item1
+	{
+		side="LOGIC";
+		class Vehicles
 		{
-			side="LOGIC";
-			class Vehicles
+			items=1;
+			class Item0
 			{
-				items=1;
-				class Item0
-				{
-					position[]={-143.93861,0.52647489,2319.5012};
-					id=50;
-					side="LOGIC";
-					vehicle="FunctionsManager";
-					leader=1;
-					lock="UNLOCKED";
-					skill=0.60000002;
+				position[]={-143.93861,0.52647489,2319.5012};
+				id=50;
+				side="LOGIC";
+				vehicle="FunctionsManager";
+				leader=1;
+				lock="UNLOCKED";
+				skill=0.60000002;
 				};
 			};
 		};
@@ -1298,7 +1327,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=5;
+	items=12;
 		class Item0
 		{
 			position[]={6325.6772,304.99033,7807.7412};
@@ -1380,6 +1409,111 @@ class Mission
 			expCond="(player distance zonehero) < 100;";
 			expActiv="[""Hero Trader"",false,""enter""] spawn player_traderCity;";
 			expDesactiv="[""Hero Trader"",false,""leave""] spawn player_traderCity;";
+			class Effects
+			{
+			};
+		};
+		class Item5
+		{
+			position[]={6772.35,0.103,2494.58};
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="zonebank1";
+			expCond="(player distance zonebank1) < 15;";
+			expActiv="TitleText[""Now entering Banking area"",""PLAIN DOWN""]; canbuild = false;insafezone = true;";
+			expDesactiv="TitleText[""Now leaving Banking area"",""PLAIN DOWN""]; canbuild = true;insafezone = false;";
+			class Effects
+			{
+			};
+		};
+		class Item6
+		{
+			position[]={10005.678, 0.61099607,1861.6836,  };
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="zonebank2";
+			expCond="(player distance zonebank2) < 15;";
+			expActiv="TitleText[""Now entering Banking area"",""PLAIN DOWN""]; canbuild = false;insafezone = true;";
+			expDesactiv="TitleText[""Now leaving Banking area"",""PLAIN DOWN""]; canbuild = true;insafezone = false;";
+			class Effects
+			{
+			};
+		};
+		class Item7
+		{
+			position[]={12214.157,  0.61100769,9731.7646  };
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="zonebank3";
+			expCond="(player distance zonebank3) < 15;";
+			expActiv="TitleText[""Now entering Banking area"",""PLAIN DOWN""]; canbuild = false;insafezone = true;";
+			expDesactiv="TitleText[""Now leaving Banking area"",""PLAIN DOWN""]; canbuild = true;insafezone = false;";
+			class Effects
+			{
+			};
+		};
+		class Item8
+		{
+			position[]={13343.663, 0.61099243,5488.4917 };
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="zonebank4";
+			expCond="(player distance zonebank4) < 15;";
+			expActiv="TitleText[""Now entering Banking area"",""PLAIN DOWN""]; canbuild = false;insafezone = true;";
+			expDesactiv="TitleText[""Now leaving Banking area"",""PLAIN DOWN""]; canbuild = true;insafezone = false;";
+			class Effects
+			{
+			};
+		};
+		class Item9
+		{
+			position[]={1008.7841, 0.60786343,2218.9775 };
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="zonebank5";
+			expCond="(player distance zonebank5) < 15;";
+			expActiv="TitleText[""Now entering Banking area"",""PLAIN DOWN""]; canbuild = false;insafezone = true;";
+			expDesactiv="TitleText[""Now leaving Banking area"",""PLAIN DOWN""]; canbuild = true;insafezone = false;";
+			class Effects
+			{
+			};
+		};
+		class Item10
+		{
+			position[]={8666.5801, 0.73773193,6517.2212};
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="zonebank6";
+			expCond="(player distance zonebank6) < 15;";
+			expActiv="TitleText[""Now entering Banking area"",""PLAIN DOWN""]; canbuild = false;insafezone = true;";
+			expDesactiv="TitleText[""Now leaving Banking area"",""PLAIN DOWN""]; canbuild = true;insafezone = false;";
+			class Effects
+			{
+			};
+		};
+		class Item11
+		{
+			position[]={3649.0173, 0.73773193,8532.2158};  
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="zonebank25";
+			expCond="(player distance zonebank25) < 15;";
+			expActiv="TitleText[""Now entering Banking area"",""PLAIN DOWN""]; canbuild = false;insafezone = true;";
+			expDesactiv="TitleText[""Now leaving Banking area"",""PLAIN DOWN""]; canbuild = true;insafezone = false;";
 			class Effects
 			{
 			};

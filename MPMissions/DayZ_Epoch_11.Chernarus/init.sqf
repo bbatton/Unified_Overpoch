@@ -37,24 +37,24 @@ DynamicVehicleDamageHigh = 100; // Default: 100
 
 DZE_BuildOnRoads = false; // Default: False
 
-/*ZSC*/
+/*SC*/
 DZE_ConfigTrader = true; 
-/*ZSC*/
+DZE_AsReMix_PLAYER_HUD = true;
+/*SC*/
 
 EpochEvents = [["any","any","any","any",30,"crash_spawner"],["any","any","any","any",0,"crash_spawner"],["any","any","any","any",15,"supply_drop"]];
 dayz_fullMoonNights = true;
 
 //Load in compiled functions
-call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\variables.sqf";				//Initilize the Variables (IMPORTANT: Must happen very early)
+call compile preprocessFileLineNumbers "Scripts\Variables\Variables.sqf";				//Initilize the Variables (IMPORTANT: Must happen very early)
 progressLoadingScreen 0.1;
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\publicEH.sqf";				//Initilize the publicVariable event handlers
 progressLoadingScreen 0.2;
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\medical\setup_functions_med.sqf";	//Functions used by CLIENT for medical
 progressLoadingScreen 0.4;
-call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\compiles.sqf";	//Compile regular functions
-call compile preprocessFileLineNumbers "ZSC\gold\ZSCinit.sqf";		
+call compile preprocessFileLineNumbers "Scripts\Server_Compile\compiles.sqf";	//Compile regular functions	
 progressLoadingScreen 0.5;
-call compile preprocessFileLineNumbers "server_traders_cherno_11.sqf";				//Compile trader configs
+call compile preprocessFileLineNumbers "Scripts\Server_Traders\server_traders.sqf";				//Compile trader configs
 progressLoadingScreen 1.0;
 
 "filmic" setToneMappingParams [0.153, 0.357, 0.231, 0.1573, 0.011, 3.750, 6, 4]; setToneMapping "Filmic";
@@ -62,9 +62,7 @@ progressLoadingScreen 1.0;
 if (isServer) then {
 	call compile preprocessFileLineNumbers "\z\addons\dayz_server\missions\DayZ_Epoch_11.Chernarus\dynamic_vehicle.sqf";
 	_nil = [] execVM "\z\addons\dayz_server\missions\DayZ_Epoch_11.Chernarus\mission.sqf";
-	/*ZSC*/
-	_serverMonitor = 	[] execVM "\z\addons\dayz_server\system\server_monitor.sqf";
-	/*ZSC*/
+	_serverMonitor = [] execVM "\z\addons\dayz_code\system\server_monitor.sqf";
 };
 
 if (!isDedicated) then {
@@ -76,6 +74,11 @@ if (!isDedicated) then {
 	//Run the player monitor
 	_id = player addEventHandler ["Respawn", {_id = [] spawn player_death;}];
 	_playerMonitor = 	[] execVM "\z\addons\dayz_code\system\player_monitor.sqf";	
+	if (DZE_AsReMix_PLAYER_HUD) then {
+		execVM "Scripts\Player_Hud\playerHud.sqf";
+    }else{
+		execVM "custom\Logo_Hud.sqf";
+	};
 	
 	//Lights
 	//[false,12] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";
@@ -83,20 +86,21 @@ if (!isDedicated) then {
 	waitUntil{!isNil "UEP_Config"};
 	[] execVM "custom\welcome_credits.sqf";
 	[] execVM "custom\service_point\service_point.sqf";
-	[] execVM "ZSC\compiles\playerHud.sqf";
-	[] execVM "custom\player_selfbloodbag.sqf";
-	waitUntil {!isNil "UEP_Hud_Started"};
+	[] execVM "custom\kill_msg.sqf";
 };
 
 //#include "\z\addons\dayz_code\system\REsec.sqf"
 //Start Dynamic Weather
-[] execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";
+execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";
 
 //Custom Scripts
 [] execVM "custom\loadout.sqf";
 [] execVM "R3F_ARTY_AND_LOG\init.sqf";
+execVM "Scripts\Gold_Coin_system\init.sqf";
+execVM "Scripts\Gold_Coin_system\Bank_Markers\addbankmarkers.sqf";
+[] execVM "custom\safeZoneCars.sqf";
+[] execVM "custom\safeZones.sqf";
+[] execVM "custom\safeZone_Infistar.sqf";
+[] execVM "custom\actions\activate.sqf";
 
 #include "\z\addons\dayz_code\system\BIS_Effects\init.sqf"
-if (!isDedicated) then {
-	[] execVM 'custom\CAGN\initiate.sqf'; 
-};

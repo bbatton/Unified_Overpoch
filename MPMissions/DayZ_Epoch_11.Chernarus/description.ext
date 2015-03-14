@@ -1,4 +1,4 @@
-#include "ZSC\config\cfgServerTrader.hpp"
+#include "Scripts\Trader_Items\cfgServerTrader.hpp"
 respawn = "BASE";
 respawndelay = 5;
 onLoadMission= "DayZ Epoch Chernarus";
@@ -27,6 +27,8 @@ aiKills = 1;
 diagRadio = 1;
 diagHit = 1;
 
+#include "Scripts\Player_Hud\commonhud.hpp"
+#include "Scripts\Defines\hw.hpp"
 class RscText
 {
 	type = 0;
@@ -108,17 +110,7 @@ class DayZ_loadingScreen
 			colorText[] = {0,0,0,0};
 			colorBackground[] = {0,0,0,1};
 		};
-		/*
-		class nicePic : RscPicture
-		{
-			style = 48 + 0x800; // ST_PICTURE + ST_KEEP_ASPECT_RATIO
-			x = safezoneX + safezoneW/2 - 0.25;
-			y = safezoneY + safezoneH/2 - 0.2;
-			w = 0.5;
-			h = 0.4;
-			text = "img\nicePic.paa";
-		};
-		*/
+		
 	};
 	class controls
 	{
@@ -153,7 +145,10 @@ class DayZ_loadingScreen
 
 class RscTitles
 {
-#include "ZSC\config\ZSChud.hpp"
+#include "Scripts\Player_Hud\hud.hpp"
 };
-#include "ZSC\config\ZSCdefines.hpp"
-#include "ZSC\config\ZSCdialogs.hpp"
+
+#include "Scripts\Defines\defines.hpp"
+#include "Scripts\Defines\common.hpp"
+#include "Scripts\Gold_Coin_system\Bank_Dialog\bank_dialog.hpp"
+#include "Scripts\Gold_Coin_system\Give_Money\give_player_dialog.hpp"

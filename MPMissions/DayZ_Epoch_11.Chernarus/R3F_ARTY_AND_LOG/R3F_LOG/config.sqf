@@ -158,7 +158,29 @@ R3F_LOG_CFG_objets_remorquables =
 	"Volha_1_TK_CIV_EP1",
 	"Volha_2_TK_CIV_EP1",
 	"VWGolf",
-	"Zodiac"
+	"Zodiac",
+	"Civcar",
+	"Civcarbu",
+	"Civcarre",
+	"Civcarge",
+	"Civcarwh",
+	"Civcarsl",
+	"Civcarbl",
+	"350z",
+	"350z_red",
+	"350z_kiwi",
+	"350z_black",
+	"350z_silver",
+	"350z_green",
+	"350z_blue",
+	"350z_gold",
+	"350z_white",
+	"350z_pink",
+	"350z_mod",
+	"350z_ruben",
+	"350z_v",
+	"350z_city",
+	"350z_yellow"
 ];
 
 
@@ -176,7 +198,8 @@ R3F_LOG_CFG_heliporteurs =
 	"Mi17_DZE",
 	"UH1H_DZE",
 	"UH1Y_DZE",
-	"UH60M_EP1_DZE"
+	"UH60M_EP1_DZE",
+	"CH53_DZE"
 ];
 
 /**
@@ -261,7 +284,29 @@ R3F_LOG_CFG_objets_heliportables =
 	"Volha_1_TK_CIV_EP1",
 	"Volha_2_TK_CIV_EP1",
 	"VWGolf",
-	"Zodiac"
+	"Zodiac",
+	"Civcar",
+	"Civcarbu",
+	"Civcarre",
+	"Civcarge",
+	"Civcarwh",
+	"Civcarsl",
+	"Civcarbl",
+	"350z",
+	"350z_red",
+	"350z_kiwi",
+	"350z_black",
+	"350z_silver",
+	"350z_green",
+	"350z_blue",
+	"350z_gold",
+	"350z_white",
+	"350z_pink",
+	"350z_mod",
+	"350z_ruben",
+	"350z_v",
+	"350z_city",
+	"350z_yellow"
 ];
 
 
