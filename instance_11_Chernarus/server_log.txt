@@ -206,3 +206,19 @@
 18:38:33 Game started.
 18:55:18 Player grave disconnected.
 18:55:18 BattlEye Server: Player #0 grave disconnected
+20:49:51 BattlEye Server: Initialized (v1.195)
+20:49:51 Host identity created.
+20:49:58 grave uses modified data file
+20:49:58 BattlEye Server: Player #0 grave (192.168.1.100:2316) connected
+20:49:58 Player grave connecting.
+20:49:59 Mission DayZ Epoch Chernarus read from directory.
+20:50:00 BattlEye Server: Player #0 grave - GUID: 8137d970fa6d3e00420e2c593d39ad00 (unverified)
+20:50:01 Player grave connected (id=76561197986546735).
+20:50:01 BattlEye Server: Verified GUID (8137d970fa6d3e00420e2c593d39ad00) of player #0 grave
+20:50:02 BattlEye Server: Player #0 grave - Legacy GUID: 846e3d36f1c52662a763031b24fdc1e5
+20:51:08 Roles assigned.
+20:51:08 Reading mission ...
+20:51:19 Mission read.
+20:52:00 Game started.
+21:16:47 Player grave disconnected.
+21:16:47 BattlEye Server: Player #0 grave disconnected

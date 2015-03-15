@@ -23,11 +23,11 @@
 /*  Use Player White-list */ _UPW = false;	/* true or false */	/* recommended: false */
 /*  WHITELIST UIDs HERE   */ _WHITELIST = ["0","0","0"]; //do not have a , at the end.
 /* ********************************************************************************* */
-/*  Top esc menu TXT      */ _TopOfESC = "DayZ Server"; //do not use " in this text.
-/*  Bottom esc menu TXT   */ _LowerTop = "AntiHack / AdminTool"; //do not use " in this text.
-/*  Bottom esc menu TXT2  */ _LowerBottom = "by infiSTAR.de"; //do not use " in this text.
+/*  Top esc menu TXT      */ _TopOfESC = "Mythic Gaming"; //do not use " in this text.
+/*  Bottom esc menu TXT   */ _LowerTop = "TS:MythicGaming.ENJINVOICE.com"; //do not use " in this text.
+/*  Bottom esc menu TXT2  */ _LowerBottom = "Unified Epoch Project"; //do not use " in this text.
 /*  Color esc menu TXT    */ _EscColor = [0.6,0,0,1];
-/*  DebugMonitor TXT      */ _BottomDebug = "infiSTAR.de"; //do not use " in this text.
+/*  DebugMonitor TXT      */ _BottomDebug = ""; //do not use " in this text.
 /*  DebugMonitor Key      */ _ODK =  0xCF;	/* google DIK_KeyCodes (0xCF is END) */
 /*  Use DebugMonitor      */ _DMS =  false;	/* true or false */	/* starts up with debugmonitor ON if true */
 /*  DebugMonitor Action   */ _DMW = false;	/* true or false */	/* "Debug" option on mousewheel */

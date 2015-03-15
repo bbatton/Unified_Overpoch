@@ -148,6 +148,8 @@ class RscTitles
 #include "Scripts\Player_Hud\hud.hpp"
 };
 
+#include "custom\zupa\advancedTrading\ZSCdefines.hpp"
+#include "custom\zupa\advancedTrading\advancedTrading.hpp"
 #include "Scripts\Defines\defines.hpp"
 #include "Scripts\Defines\common.hpp"
 #include "Scripts\Gold_Coin_system\Bank_Dialog\bank_dialog.hpp"

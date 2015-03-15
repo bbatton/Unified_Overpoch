@@ -119,12 +119,9 @@ if (_dikCode in (actionKeys "GetOver")) then {
 //if (_dikCode == 57) then {_handled = true}; // space
 //if (_dikCode in actionKeys 'MoveForward' or _dikCode in actionKeys 'MoveBack') then {r_interrupt = true};
 if (_dikCode == 210) then {
-	if (DZE_AsReMix_PLAYER_HUD = false) then {
+	if (DZE_AsReMix_PLAYER_HUD) then {
 		hintSilent '';
-		DZE_AsReMix_PLAYER_HUD = true;
-	} else{
-		hintSilent '';
-		DZE_AsReMix_PLAYER_HUD = false;
+		execVM "Scripts\Player_Hud\playerHud.sqf";
 	};
 };
 

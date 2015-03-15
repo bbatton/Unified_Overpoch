@@ -29,6 +29,7 @@ VehicleMenu =
 [
 	["",true],
 	["Build Bike", [], "", -5, [["expression", format[_EXECscript1,"deploy_bike.sqf"]]], "1", "1"],
+	["Build Motorcycle", [], "", -5, [["expression", format[_EXECscript1,"deploy_motorBike.sqf"]]], "1", "1"],
 	["Build Mozzie", [],  "", -5, [["expression", format[_EXECscript1,"deploy_mozzie.sqf"]]], "1", "1"],
 		["", [], "", -5, [["expression", ""]], "1", "0"],
 		["Exit", [20], "", -5, [["expression", ""]], "1", "1"]		

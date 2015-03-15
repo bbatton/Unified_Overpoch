@@ -36,6 +36,8 @@ DynamicVehicleDamageLow = 0; // Default: 0
 DynamicVehicleDamageHigh = 100; // Default: 100
 
 DZE_BuildOnRoads = false; // Default: False
+DZE_requireplot = 1;
+DZE_PlotPole = [60,60]
 
 /*SC*/
 DZE_ConfigTrader = true; 
@@ -74,11 +76,7 @@ if (!isDedicated) then {
 	//Run the player monitor
 	_id = player addEventHandler ["Respawn", {_id = [] spawn player_death;}];
 	_playerMonitor = 	[] execVM "\z\addons\dayz_code\system\player_monitor.sqf";	
-	if (DZE_AsReMix_PLAYER_HUD) then {
-		execVM "Scripts\Player_Hud\playerHud.sqf";
-    }else{
-		execVM "custom\Logo_Hud.sqf";
-	};
+	execVM "Scripts\Player_Hud\playerHud.sqf";
 	
 	//Lights
 	//[false,12] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";
