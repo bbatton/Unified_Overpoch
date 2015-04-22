@@ -37,7 +37,7 @@ DynamicVehicleDamageHigh = 100; // Default: 100
 
 DZE_BuildOnRoads = false; // Default: False
 DZE_requireplot = 1;
-DZE_PlotPole = [60,60]
+DZE_PlotPole = [60,60];
 
 /*SC*/
 DZE_ConfigTrader = true; 
@@ -98,7 +98,7 @@ execVM "Scripts\Gold_Coin_system\init.sqf";
 execVM "Scripts\Gold_Coin_system\Bank_Markers\addbankmarkers.sqf";
 [] execVM "custom\safeZoneCars.sqf";
 [] execVM "custom\safeZones.sqf";
-[] execVM "custom\safeZone_Infistar.sqf";
+//[] execVM "custom\safeZone_Infistar.sqf";
 [] execVM "custom\actions\activate.sqf";
 
 #include "\z\addons\dayz_code\system\BIS_Effects\init.sqf"

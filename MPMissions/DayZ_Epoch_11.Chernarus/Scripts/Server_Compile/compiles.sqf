@@ -44,6 +44,10 @@ BIS_fnc_numberText = compile preprocessFileLineNumbers "Scripts\Player_Hud\numbe
 if (!isDedicated) then {
 
 	"filmic" setToneMappingParams [0.07, 0.31, 0.23, 0.37, 0.011, 3.750, 6, 4]; setToneMapping "Filmic";
+	VehicleColourPaint =	compile preprocessFileLineNumbers "custom\Paint\vehicleColourPaint.sqf";
+	VehicleColourUpdate =	compile preprocessFileLineNumbers "custom\Paint\VehicleColourUpdate.sqf";
+	VehicleColourUpdate2 =	compile preprocessFileLineNumbers "custom\Paint\VehicleColourUpdate2.sqf";
+	player_paint =			compile preprocessFileLineNumbers "custom\Paint\player_paint.sqf";
 	BIS_Effects_Burn = compile preprocessFile "\ca\Data\ParticleEffects\SCRIPTS\destruction\burn.sqf";
 	player_zombieCheck = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_zombieCheck.sqf";
 	player_zombieAttack = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_zombieAttack.sqf";

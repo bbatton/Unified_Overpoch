@@ -37,7 +37,7 @@ while {DZE_AsReMix_PLAYER_HUD} do
 
 	_vitals ctrlSetStructuredText parseText format 
 ["
-	<t size='0.8' align='right'>~~~~ Mythic Gaming ~~~~</t><br/>
+	<t size='0.8' align='right'>~~~~ Some Game Server ~~~~</t><br/>
 	<t size='0.9'> %1 </t><img size='0.9' align='right' image='Scripts\Player_Hud\icons\Health.paa'/><br/> 
 	<t size='0.9'> %2 %3 </t><br/> 
 	<t size='0.9'> %4 </t><img size='0.9' align='right' image='Scripts\Player_Hud\icons\Money.paa'/><br/>

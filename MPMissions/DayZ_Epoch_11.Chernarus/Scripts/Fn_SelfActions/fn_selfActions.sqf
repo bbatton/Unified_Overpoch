@@ -287,6 +287,11 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 				if(_hasKey || _oldOwner) then {
 					_Unlock = player addAction [format[localize "STR_EPOCH_ACTIONS_UNLOCK",_text], "\z\addons\dayz_code\actions\unlock_veh.sqf",[_cursorTarget,(_temp_keys_names select (parseNumber _ownerID))], 2, true, true, "", ""];
 					s_player_lockunlock set [count s_player_lockunlock,_Unlock];
+					if (_typeOfCursorTarget in ColourVehicles) then {
+					private ["_paint"];
+					_paint = player addAction ["Paint", "custom\Paint\player_paint_init.sqf",_cursorTarget, 2, true, true, "", ""];
+					s_player_lockunlock set [count s_player_lockunlock,_paint];
+	};
 					s_player_lockUnlock_crtl = 1;
 				} else {
 					if(_hasHotwireKit) then {

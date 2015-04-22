@@ -1,8 +1,8 @@
 #include "Scripts\Trader_Items\cfgServerTrader.hpp"
 respawn = "BASE";
 respawndelay = 5;
-onLoadMission= "DayZ Epoch Chernarus";
-OnLoadIntro = "Welcome to DayZ Epoch Chernarus";
+onLoadMission= "DayZ Overpoch Chernarus";
+OnLoadIntro = "Welcome to DayZ Overpoch Chernarus";
 OnLoadIntroTime = False;
 OnLoadMissionTime = False;
 disabledAI = true;
@@ -154,3 +154,5 @@ class RscTitles
 #include "Scripts\Defines\common.hpp"
 #include "Scripts\Gold_Coin_system\Bank_Dialog\bank_dialog.hpp"
 #include "Scripts\Gold_Coin_system\Give_Money\give_player_dialog.hpp"
+#include "custom\Paint\defines.hpp"
+#include "custom\Paint\vehiclecolour.hpp"
